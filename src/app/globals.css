@@ -489,17 +489,18 @@ h6,
 
 .blog-btn-icon .blog-icon-2 {
     display: flex;
+    align-items: center;
     position: absolute;
-    top: 6px;
+    top: 50%;
+    transform: translateY(-50%);
     left: -140px;
-
 }
 
 .blog-btn-icon:hover .blog-icon-2 {
     transition: 1s;
     left: 5px;
-    top: 6px;
-    padding-bottom: 5px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .blog-icon-1 {
