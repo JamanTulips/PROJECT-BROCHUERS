@@ -32,32 +32,46 @@ const Navbar = () => {
             <div className="navbar-nav ms-auto mx-xl-auto p-0">
               <Link
                 href="/"
-                className={`nav-item nav-link ${
-                  pathname === "/" ? "active text-secondary" : ""
-                }`}
+                className={`nav-item nav-link ${pathname === "/" ? "active text-secondary" : ""
+                  }`}
               >
                 Home
               </Link>
               <Link
-                href="/#"
+                href="/about"
                 className={`nav-item nav-link ${isActive("/about")}`}
               >
                 About
               </Link>
               <Link
-                href="/#"
+                href="/services"
                 className={`nav-item nav-link ${isActive("/services")}`}
               >
                 Services
               </Link>
               <Link
-                href="/#"
+                href="/projects"
                 className={`nav-item nav-link ${isActive("/projects")}`}
               >
                 Projects
               </Link>
+              <div className={`nav-item dropdown ${["/team", "/blog", "/testimonials"].includes(pathname) ? "active" : ""}`}>
+                <a
+                  href="#"
+                  className={`nav-link dropdown-toggle ${["/team", "/blog", "/testimonials"].includes(pathname) ? "text-secondary" : ""}`}
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <div className="dropdown-menu rounded-0 m-0">
+                  <Link href="/blog" className={`dropdown-item ${isActive("/blog") ? "active" : ""}`}>Our Blog</Link>
+                  <Link href="/team" className={`dropdown-item ${isActive("/team") ? "active" : ""}`}>Our Team</Link>
+                  <Link href="/testimonials" className={`dropdown-item ${isActive("/testimonials") ? "active" : ""}`}>Testimonial</Link>
+                </div>
+              </div>
               <Link
-                href="/#"
+                href="/contact"
                 className={`nav-item nav-link ${isActive("/contact")}`}
               >
                 Contact
