@@ -7,7 +7,7 @@ import "animate.css";
 import "../styles/bootstrap.min.css";
 import "./globals.css";
 import BootstrapClient from "../components/BootstrapClient";
-import TopBar from "../components/TopBar";
+// import TopBar from "../components/TopBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${saira.variable}`}>
-        <TopBar />
+        {/* <TopBar /> */}
         <Navbar />
         {children}
         <Footer />

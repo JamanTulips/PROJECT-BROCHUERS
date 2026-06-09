@@ -90,13 +90,13 @@ const ContactSection = () => {
                                         placeholder="Message" required></textarea>
                                 </div>
 
-                                <div className="mb-4">
+                                {/* <div className="mb-4">
                                     <ReCAPTCHA
                                         sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
                                         onChange={(token) => setCaptchaToken(token)}
                                     />
                                     <input type="hidden" name="g-recaptcha-response" value={captchaToken || ''} />
-                                </div>
+                                </div> */}
 
                                 <div className="text-start">
                                     <button

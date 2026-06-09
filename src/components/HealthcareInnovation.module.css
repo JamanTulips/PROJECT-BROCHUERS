@@ -1,0 +1,152 @@
+.section {
+  background: #ffffff;
+  padding: 46px 24px 100px;
+  color: #111827;
+  font-family: var(--font-inter), sans-serif;
+}
+
+.container {
+  width: min(100%, 1050px);
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header h2 {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  font-weight: 650;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+}
+
+.header p {
+  max-width: 505px;
+  margin: 14px auto 0;
+  color: #64748b;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.82fr) minmax(320px, 1fr);
+  align-items: start;
+  gap: 96px;
+  margin-top: 122px;
+}
+
+.grid h3 {
+  max-width: 360px;
+  margin: 0;
+  color: #111827;
+  font-size: clamp(2.55rem, 4.2vw, 3.7rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.copyBlock {
+  padding-top: 4px;
+}
+
+.copyBlock p {
+  max-width: 465px;
+  margin: 0;
+  color: #64748b;
+  font-size: 0.98rem;
+  font-weight: 500;
+  line-height: 1.48;
+}
+
+.copyBlock strong {
+  display: block;
+  max-width: 570px;
+  margin-top: 48px;
+  color: #0f172a;
+  font-size: clamp(2.05rem, 3.45vw, 3.05rem);
+  font-weight: 650;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 300px;
+  margin-top: 36px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+}
+
+@media (max-width: 991.98px) {
+  .section {
+    padding: 56px 22px 78px;
+  }
+
+  .container {
+    max-width: 760px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    margin-top: 76px;
+  }
+
+  .grid h3,
+  .copyBlock p,
+  .copyBlock strong {
+    max-width: 100%;
+  }
+
+  .copyBlock strong {
+    margin-top: 34px;
+    text-align: left;
+  }
+
+  .image {
+    height: 280px;
+    margin-top: 42px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section {
+    padding: 44px 16px 64px;
+  }
+
+  .header h2 {
+    font-size: 1.72rem;
+  }
+
+  .header p,
+  .copyBlock p {
+    font-size: 0.92rem;
+  }
+
+  .grid {
+    margin-top: 58px;
+  }
+
+  .grid h3 {
+    font-size: 2.35rem;
+  }
+
+  .copyBlock strong {
+    font-size: 2rem;
+  }
+
+  .image {
+    height: 210px;
+    border-radius: 16px;
+  }
+}
