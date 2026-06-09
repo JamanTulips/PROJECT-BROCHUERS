@@ -3,7 +3,8 @@ import HealthcareHero from "@/components/HealthcareHero";
 import HealthcareInnovation from "@/components/HealthcareInnovation";
 // import ServicesSection from "@/components/ServicesSection";
 import HealthcareServices from "@/components/HealthcareServices";
-import ProjectsSection from "@/components/ProjectsSection";
+// import ProjectsSection from "@/components/ProjectsSection";
+import ClinicalNetwork from "@/components/ClinicalNetwork";
 import ContactSection from "@/components/ContactSection";
 import BlogSection from "@/components/BlogSection";
 import TeamSection from "@/components/TeamSection";
@@ -17,7 +18,8 @@ export default function Home() {
       <HealthcareInnovation />
       {/* <ServicesSection /> */}
       <HealthcareServices />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
+      <ClinicalNetwork />
       <BlogSection />
       <TeamSection />
       <TestimonialsSection />
