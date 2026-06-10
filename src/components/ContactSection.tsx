@@ -16,14 +16,14 @@ const ContactSection = () => {
   );
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   return (
-    <div className="container-fluid py-5 mb-5">
+    <div id="contact" className="container-fluid py-5 mb-5">
       <div className="container">
         <div
           className="text-center mx-auto pb-5 wow fadeIn"
           data-wow-delay=".3s"
           style={{ maxWidth: "600px" }}
         >
-          <h5 className="text-primary">Get In Touch</h5>
+          {/* <h5 className="text-primary">Get In Touch</h5> */}
           <h1 className="mb-3">Contact for any query</h1>
         </div>
         <div className="contact-detail position-relative p-5">
@@ -31,13 +31,13 @@ const ContactSection = () => {
             <div className="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
               <div className="d-flex bg-light p-3 rounded">
                 <div
-                  className="flex-shrink-0 btn-square bg-secondary rounded-circle"
-                  style={{ width: "64px", height: "64px" }}
+                  className="flex-shrink-0 btn-square rounded-circle"
+                  style={{ width: "64px", height: "64px", backgroundColor: "#000000" }}
                 >
                   <i className="fas fa-map-marker-alt text-white"></i>
                 </div>
                 <div className="ms-3">
-                  <h4 className="text-primary">Address</h4>
+                  <h4 className="text-black">Address</h4>
                   <a
                     href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6"
                     target="_blank"
@@ -51,13 +51,13 @@ const ContactSection = () => {
             <div className="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
               <div className="d-flex bg-light p-3 rounded">
                 <div
-                  className="flex-shrink-0 btn-square bg-secondary rounded-circle"
-                  style={{ width: "64px", height: "64px" }}
+                  className="flex-shrink-0 btn-square rounded-circle"
+                  style={{ width: "64px", height: "64px", backgroundColor: "#000000" }}
                 >
                   <i className="fa fa-phone text-white"></i>
                 </div>
                 <div className="ms-3">
-                  <h4 className="text-primary">Call Us</h4>
+                  <h4 className="text-black">Call Us</h4>
                   <a className="h5" href="tel:+9779705384904" target="_blank">
                     +977 9705384904
                   </a>
@@ -67,13 +67,13 @@ const ContactSection = () => {
             <div className="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
               <div className="d-flex bg-light p-3 rounded">
                 <div
-                  className="flex-shrink-0 btn-square bg-secondary rounded-circle"
-                  style={{ width: "64px", height: "64px" }}
+                  className="flex-shrink-0 btn-square rounded-circle"
+                  style={{ width: "64px", height: "64px", backgroundColor: "#000000" }}
                 >
                   <i className="fa fa-envelope text-white"></i>
                 </div>
                 <div className="ms-3">
-                  <h4 className="text-primary">Email Us</h4>
+                  <h4 className="text-black">Email Us</h4>
                   <a
                     className="h5"
                     href="mailto:paarisha@saiitek.com.np"
@@ -85,7 +85,7 @@ const ContactSection = () => {
               </div>
             </div>
           </div>
-          <div className="row g-5">
+          {/* <div className="row g-5">
             <div className="col-lg-6 wow fadeIn" data-wow-delay=".3s">
               <div className="p-5 h-100 rounded contact-map">
                 <iframe
@@ -145,13 +145,13 @@ const ContactSection = () => {
                   ></textarea>
                 </div>
 
-                {/* <div className="mb-4">
+                <div className="mb-4">
                                     <ReCAPTCHA
                                         sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
                                         onChange={(token) => setCaptchaToken(token)}
                                     />
                                     <input type="hidden" name="g-recaptcha-response" value={captchaToken || ''} />
-                                </div> */}
+                                </div>
 
                 <div className="text-start">
                   <button
@@ -164,7 +164,7 @@ const ContactSection = () => {
                 </div>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

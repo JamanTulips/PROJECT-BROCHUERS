@@ -7,12 +7,15 @@ import HealthcareServices from "@/components/HealthcareServices";
 import ClinicalNetwork from "@/components/ClinicalNetwork";
 import ContactSection from "@/components/ContactSection";
 import BlogSection from "@/components/BlogSection";
+import GalleryCarousel from "@/components/GalleryCarousel";
+import PartnersStandards from "@/components/PartnersStandards";
 import TeamSection from "@/components/TeamSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles.homePage}>
       <HealthcareHero />
       {/* <AboutSection /> */}
       <HealthcareInnovation />
@@ -20,9 +23,11 @@ export default function Home() {
       <HealthcareServices />
       {/* <ProjectsSection /> */}
       <ClinicalNetwork />
-      <BlogSection />
-      <TeamSection />
-      <TestimonialsSection />
+      {/* <BlogSection /> */}
+      <GalleryCarousel />
+      <PartnersStandards />
+      {/* <TeamSection /> */}
+      {/* <TestimonialsSection /> */}
       <ContactSection />
     </main>
   );

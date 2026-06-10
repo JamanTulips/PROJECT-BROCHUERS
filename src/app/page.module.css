@@ -29,6 +29,21 @@
   padding: 120px 60px;
 }
 
+.homePage {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.homePage > * {
+  width: 100%;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 .intro {
   display: flex;
   flex-direction: column;

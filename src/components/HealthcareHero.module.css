@@ -6,9 +6,9 @@
   padding: 66px 24px 54px;
   color: #ffffff;
   background:
-    radial-gradient(circle at 11% 6%, rgba(255, 255, 255, 0.74), transparent 20%),
-    radial-gradient(circle at 86% 12%, rgba(149, 211, 255, 0.86), transparent 24%),
-    linear-gradient(132deg, #2864bd 0%, #4f9cdb 48%, #2264ba 100%);
+    radial-gradient(circle at 12% 8%, rgba(43, 121, 204, 0.46), transparent 30%),
+    radial-gradient(circle at 86% 12%, rgba(45, 123, 202, 0.46), transparent 30%),
+    linear-gradient(132deg, #255fba 0%, #4b9cdb 48%, #2264ba 100%);
 }
 
 .hero::before {
@@ -17,8 +17,8 @@
   z-index: -3;
   content: "";
   background:
-    radial-gradient(circle at 18% 34%, rgba(29, 58, 156, 0.68), transparent 34%),
-    radial-gradient(circle at 65% 48%, rgba(125, 195, 244, 0.5), transparent 34%),
+    radial-gradient(circle at 18% 34%, rgba(32, 87, 177, 0.42), transparent 36%),
+    radial-gradient(circle at 65% 48%, rgba(43, 126, 206, 0.32), transparent 36%),
     linear-gradient(115deg, rgba(33, 77, 172, 0.88), rgba(93, 179, 235, 0.88));
 }
 
@@ -38,7 +38,7 @@
   width: 310px;
   height: 310px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(46, 124, 205, 0.34);
 }
 
 .blurTwo {
@@ -47,7 +47,7 @@
   width: 330px;
   height: 255px;
   border-radius: 999px;
-  background: rgba(142, 213, 255, 0.92);
+  background: rgba(54, 137, 214, 0.36);
 }
 
 .blurThree {

@@ -3,6 +3,7 @@ import styles from "./HealthcareServices.module.css";
 export default function HealthcareServices() {
   return (
     <section
+      id="services"
       className={styles.section}
       aria-labelledby="healthcare-services-title"
     >

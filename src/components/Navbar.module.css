@@ -27,7 +27,7 @@
 .logo {
   display: block;
   width: auto;
-  height: 55px;
+  height: 34px;
   object-fit: contain;
 }
 
@@ -133,7 +133,7 @@
   }
 
   .logo {
-    height: 46px;
+    height: 38px;
   }
 
   .menuButton {

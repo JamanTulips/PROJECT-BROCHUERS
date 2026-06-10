@@ -3,6 +3,7 @@ import styles from "./HealthcareInnovation.module.css";
 export default function HealthcareInnovation() {
   return (
     <section
+      id="about"
       className={styles.section}
       aria-labelledby="healthcare-innovation-title"
     >

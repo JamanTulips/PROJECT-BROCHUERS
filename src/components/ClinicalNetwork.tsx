@@ -38,6 +38,7 @@ const logoRows = [
 export default function ClinicalNetwork() {
   return (
     <section
+      id="networks"
       className={styles.section}
       aria-labelledby="clinical-network-title"
     >

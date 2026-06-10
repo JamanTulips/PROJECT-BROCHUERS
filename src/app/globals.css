@@ -5,6 +5,10 @@
     --bs-heading-font-family: var(--font-saira), sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-inter), sans-serif;
 }

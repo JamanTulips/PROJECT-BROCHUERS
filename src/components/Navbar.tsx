@@ -6,10 +6,11 @@ import styles from "./Navbar.module.css";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/projects", label: "Projects" },
-  { href: "/contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#services", label: "Services" },
+  { href: "/#network", label: "Network" },
+  { href: "/#gallery", label: "Gallery" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 const Navbar = () => {
@@ -22,7 +23,7 @@ const Navbar = () => {
     <header className={styles.header}>
       <nav className={styles.navbar} aria-label="Main navigation">
         <Link href="/" className={styles.logoLink} aria-label="Qsystems AI home">
-          <img src="/img/qsystems.png" alt="Qsystems AI" className={styles.logo} />
+          <img src="/img/saiiteklogo.jpeg" alt="SAIITEK AI" className={styles.logo} />
         </Link>
 
         <button
@@ -54,9 +55,9 @@ const Navbar = () => {
             ))}
           </div>
 
-          <Link href="/contact" className={styles.cta} onClick={() => setIsMenuOpen(false)}>
+          {/* <Link href="/contact" className={styles.cta} onClick={() => setIsMenuOpen(false)}>
             Request A Demo
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </header>

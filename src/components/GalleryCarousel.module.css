@@ -1,0 +1,169 @@
+.section {
+  width: 100%;
+  overflow: hidden;
+  background: #f8fafc;
+  padding: 38px 0 42px;
+}
+
+.inner {
+  width: min(100%, 1280px);
+  margin: 0 auto;
+  padding: 0 84px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.header h2 {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(2rem, 3vw, 2.35rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.header span {
+  display: block;
+  width: 55px;
+  height: 4px;
+  margin-top: 6px;
+  border-radius: 999px;
+  background: #4f8eaa;
+}
+
+.carouselShell {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.viewport {
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.track {
+  display: flex;
+  gap: 24px;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 calc((100% - 48px) / 3);
+  height: 286px;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #334155;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.1);
+  transform: translateY(-50%);
+  transition: color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.arrowButton:hover,
+.arrowButton:focus-visible {
+  color: #397d9b;
+  box-shadow: 0 14px 26px rgba(15, 23, 42, 0.14);
+  transform: translateY(-50%) scale(1.04);
+}
+
+.arrowButton:focus-visible {
+  outline: 3px solid rgba(79, 142, 170, 0.25);
+  outline-offset: 3px;
+}
+
+.arrowLeft {
+  left: -62px;
+}
+
+.arrowRight {
+  right: -62px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-top: 19px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: #e2e8f0;
+  transition: width 220ms ease, background-color 220ms ease;
+}
+
+.activeDot {
+  width: 18px;
+  background: #4f8eaa;
+}
+
+@media (max-width: 1023px) {
+  .inner {
+    padding: 0 64px;
+  }
+
+  .card {
+    flex-basis: calc((100% - 24px) / 2);
+    height: 260px;
+  }
+}
+
+@media (max-width: 639px) {
+  .section {
+    padding: 32px 0 36px;
+  }
+
+  .inner {
+    padding: 0 48px;
+  }
+
+  .card {
+    flex-basis: 100%;
+    height: 240px;
+  }
+
+  .arrowButton {
+    width: 38px;
+    height: 38px;
+  }
+
+  .arrowLeft {
+    left: -44px;
+  }
+
+  .arrowRight {
+    right: -44px;
+  }
+}
