@@ -2,13 +2,19 @@ import styles from "./HealthcareInnovation.module.css";
 
 export default function HealthcareInnovation() {
   return (
-    <section className={styles.section} aria-labelledby="healthcare-innovation-title">
+    <section
+      className={styles.section}
+      aria-labelledby="healthcare-innovation-title"
+    >
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 id="healthcare-innovation-title">
             Accuracy Powered by AI, Valued by Healthcare Institutions Worldwide
           </h2>
-          <p>Over 3000 hospital trusts rely on our solution for transforming digital healthcare.</p>
+          <p>
+            Over 3000 hospital trusts rely on our solution for transforming
+            digital healthcare.
+          </p>
         </div>
 
         <div className={styles.grid}>
@@ -18,10 +24,11 @@ export default function HealthcareInnovation() {
 
           <div className={styles.copyBlock}>
             <p>
-              At saiitek, we blend cutting-edge technology with clinical expertise to transform
-              healthcare delivery through smart, seamless digital solutions.
+              At saiitek, we blend cutting-edge technology with clinical
+              expertise to transform healthcare delivery through smart, seamless
+              digital solutions.
             </p>
-            <strong>500+ doctors rely on our solutions everyday.</strong>
+            <strong>5000+ doctors rely on our solutions everyday.</strong>
           </div>
         </div>
 
