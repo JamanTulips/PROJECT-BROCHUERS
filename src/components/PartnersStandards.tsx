@@ -25,12 +25,59 @@ export default function PartnersStandards() {
       <h2 id="partners-standards-title" className={styles.srOnly}>
         Partners and Standards
       </h2>
-
       <div className={styles.container}>
+  {/* First Row */}
+  <div className={styles.column}>
+    <div className={styles.copy}>
+      <h3>Partners</h3>
+      <p>
+        Saiitek Solution Pvt Ltd is an authorized partner of PSP CORPORATION
+        TOKYO JAPAN for Nepal and authorized for promotion, marketing sales,
+        support and maintenance, training and holds sole exclusive authority in
+        Nepal for the same for all clients in Nepal.
+      </p>
+    </div>
+
+    <div className={styles.card} aria-label="Strategic partner logos">
+      <Image
+        src="/img/psplogo.jpeg"
+        alt="PSP logo"
+        width={165}
+        height={52}
+        className={styles.pspLogo}
+      />
+    </div>
+  </div>
+
+  {/* Second Row */}
+  <div className={styles.column}>
+    <div className={styles.copy}>
+      <h3>Global Standards</h3>
+      <p>Rigorous regulatory approvals ensuring safety and quality.</p>
+    </div>
+
+    <div className={styles.card} aria-label="Global regulatory standards">
+      <div className={styles.flagGroup}>
+        {standards.map((standard) => (
+          <Image
+            key={standard.src}
+            src={standard.src}
+            alt={standard.alt}
+            width={68}
+            height={50}
+            className={styles.flagLogo}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
+
+      {/* <div className={styles.container}>
         <div className={styles.column}>
           <div className={styles.copy}>
             <h3>Partners</h3>
-            <p>Collaborating with industry leaders to deliver world-class solutions.</p>
+            <p>Saiitek Solution Pvt Ltd is an authorized partner of PSP CORPORATION TOKYO JAPAN for Nepal and authorized for promotion, marketing sales, support and maintenance, training and holds sole exclusive authority in Nepal for the same for all clients in Nepal.</p>
           </div>
 
           <div className={styles.card} aria-label="Strategic partner logos">
@@ -41,14 +88,6 @@ export default function PartnersStandards() {
               height={52}
               className={styles.pspLogo}
             />
-            {/* <span className={styles.divider} aria-hidden="true" /> */}
-            {/* <div className={styles.pspAsia} aria-label="PSP Asia logo">
-              <span className={styles.pspMark} />
-              <span>
-                <strong>PSP</strong>
-                <small>ASIA</small>
-              </span>
-            </div> */}
           </div>
         </div>
 
@@ -73,7 +112,7 @@ export default function PartnersStandards() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

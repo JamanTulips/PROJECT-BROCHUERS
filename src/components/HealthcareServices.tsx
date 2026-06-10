@@ -35,7 +35,7 @@ export default function HealthcareServices() {
             </p>
           </div>
           <img
-            src="/img/maestro1.png"
+            src="/img/geminimobgenerated.png"
             alt="Medical diagnostic equipment"
             className={styles.cardImage}
           />

@@ -1,4 +1,12 @@
 import HealthcareHero from "@/components/HealthcareHero";
+import { createPageMetadata, siteConfig } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+  title: siteConfig.name,
+  description: siteConfig.description,
+  path: "/",
+  absoluteTitle: true,
+});
 // import AboutSection from "@/components/AboutSection";
 import HealthcareInnovation from "@/components/HealthcareInnovation";
 // import ServicesSection from "@/components/ServicesSection";
@@ -17,17 +25,11 @@ export default function Home() {
   return (
     <main className={styles.homePage}>
       <HealthcareHero />
-      {/* <AboutSection /> */}
       <HealthcareInnovation />
-      {/* <ServicesSection /> */}
       <HealthcareServices />
-      {/* <ProjectsSection /> */}
       <ClinicalNetwork />
-      {/* <BlogSection /> */}
       <GalleryCarousel />
       <PartnersStandards />
-      {/* <TeamSection /> */}
-      {/* <TestimonialsSection /> */}
       <ContactSection />
     </main>
   );

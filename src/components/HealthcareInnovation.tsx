@@ -25,7 +25,7 @@ export default function HealthcareInnovation() {
 
           <div className={styles.copyBlock}>
             <p>
-              At saiitek, we blend cutting-edge technology with clinical
+              At saiitek, we blend cutting-edge technology with imaging
               expertise to transform healthcare delivery through smart, seamless
               digital solutions.
             </p>

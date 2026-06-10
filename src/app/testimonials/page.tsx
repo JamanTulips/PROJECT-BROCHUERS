@@ -1,10 +1,14 @@
 import PageHeader from "@/components/PageHeader";
 import TestimonialsSection from "@/components/TestimonialsSection";
 
-export const metadata = {
-    title: "Testimonials | Koju IT Solutions",
-    description: "Read what our clients say about Koju IT Solutions. Real feedback from businesses we have helped grow through technology.",
-};
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+    title: "Testimonials",
+    description:
+        "Read client testimonials about Saiitek healthcare technology solutions — real feedback from hospitals and medical institutions using our PACS, RIS, and HIS platforms.",
+    path: "/testimonials",
+});
 
 export default function Testimonials() {
     return (

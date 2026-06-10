@@ -15,6 +15,7 @@ const galleryImages = [
   // { src: "/img/psplogo.jpeg", alt: "PSP corporation logo" },
   { src: "/img/radconhurdle.jpeg", alt: "RADCON hurdle presentation" },
   { src: "/img/rsnanext.jpeg", alt: "RSNA next presentation" },
+  { src: "/img/confrsna.jpeg", alt: "confrsna next presentation" },
   // { src: "/img/saiiteklogo.jpeg", alt: "Saiitek logo" },
   // { src: "/img/statesflag.jpeg", alt: "United States flag" },
   // { src: "/img/thaiflag.jpeg", alt: "Thailand flag" },
@@ -40,14 +41,14 @@ export default function GalleryCarousel() {
   const viewportWidth = useSyncExternalStore(
     subscribeToResize,
     getViewportWidth,
-    getServerViewportWidth
+    getServerViewportWidth,
   );
 
   const visibleCards = viewportWidth < 640 ? 1 : viewportWidth < 1024 ? 2 : 3;
 
   const maxIndex = useMemo(
     () => Math.max(galleryImages.length - visibleCards, 0),
-    [visibleCards]
+    [visibleCards],
   );
 
   const currentIndex = Math.min(activeIndex, maxIndex);
@@ -86,7 +87,11 @@ export default function GalleryCarousel() {
   };
 
   return (
-    <section id="gallery" className={styles.section} aria-labelledby="gallery-title">
+    <section
+      id="gallery"
+      className={styles.section}
+      aria-labelledby="gallery-title"
+    >
       <div className={styles.inner}>
         <div className={styles.header}>
           <h2 id="gallery-title">Gallery</h2>

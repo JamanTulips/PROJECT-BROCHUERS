@@ -12,7 +12,7 @@ const ProjectsSection = () => {
                     <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div className="project-item">
                             <div className="project-img">
-                                <img src="/img/project-1.jpg" className="img-fluid w-100 rounded" alt="" />
+                                <img src="/img/project-1.jpg" className="img-fluid w-100 rounded" alt="Web design and web analysis project" />
                                 <div className="project-content">
                                     <a href="#" className="text-center">
                                         <h4 className="text-secondary">Web design</h4>
@@ -25,7 +25,7 @@ const ProjectsSection = () => {
                     <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
                         <div className="project-item">
                             <div className="project-img">
-                                <img src="/img/project-2.jpg" className="img-fluid w-100 rounded" alt="" />
+                                <img src="/img/project-2.jpg" className="img-fluid w-100 rounded" alt="Cyber security core project" />
                                 <div className="project-content">
                                     <a href="#" className="text-center">
                                         <h4 className="text-secondary">Cyber Security</h4>
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
                     <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                         <div className="project-item">
                             <div className="project-img">
-                                <img src="/img/project-3.jpg" className="img-fluid w-100 rounded" alt="" />
+                                <img src="/img/project-3.jpg" className="img-fluid w-100 rounded" alt="Mobile information technology project" />
                                 <div className="project-content">
                                     <a href="#" className="text-center">
                                         <h4 className="text-secondary">Mobile Info</h4>
@@ -51,7 +51,7 @@ const ProjectsSection = () => {
                     <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div className="project-item">
                             <div className="project-img">
-                                <img src="/img/project-4.jpg" className="img-fluid w-100 rounded" alt="" />
+                                <img src="/img/project-4.jpg" className="img-fluid w-100 rounded" alt="Web development and analysis project" />
                                 <div className="project-content">
                                     <a href="#" className="text-center">
                                         <h4 className="text-secondary">Web Development</h4>
@@ -64,7 +64,7 @@ const ProjectsSection = () => {
                     <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
                         <div className="project-item">
                             <div className="project-img">
-                                <img src="/img/project-5.jpg" className="img-fluid w-100 rounded" alt="" />
+                                <img src="/img/project-5.jpg" className="img-fluid w-100 rounded" alt="Digital marketing analysis project" />
                                 <div className="project-content">
                                     <a href="#" className="text-center">
                                         <h4 className="text-secondary">Digital Marketing</h4>
@@ -77,7 +77,7 @@ const ProjectsSection = () => {
                     <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                         <div className="project-item">
                             <div className="project-img">
-                                <img src="/img/project-6.jpg" className="img-fluid w-100 rounded" alt="" />
+                                <img src="/img/project-6.jpg" className="img-fluid w-100 rounded" alt="Keyword research and analysis project" />
                                 <div className="project-content">
                                     <a href="#" className="text-center">
                                         <h4 className="text-secondary">keyword Research</h4>
