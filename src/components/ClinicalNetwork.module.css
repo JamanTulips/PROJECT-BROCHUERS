@@ -27,13 +27,13 @@
 }
 
 .header p {
-  max-width: none;
+  max-width: 640px;
   margin: 14px auto 0;
+  padding: 0 8px;
   color: #64748b;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.45;
-  white-space: nowrap;
 }
 
 .logoGrid {
@@ -87,13 +87,13 @@
 }
 
 .bottomPanel p {
-  max-width: none;
+  max-width: 640px;
   margin: 26px auto 0;
+  padding: 0 8px;
   color: #94a3b8;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.45;
-  white-space: nowrap;
 }
 
 @media (max-width: 991.98px) {

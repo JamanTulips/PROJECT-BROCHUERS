@@ -26,65 +26,80 @@ const ContactSection = () => {
           {/* <h5 className="text-primary">Get In Touch</h5> */}
           <h1 className="mb-3">Contact for any query</h1>
         </div>
-        <div className="contact-detail position-relative p-5">
-          <div className="row g-5 mb-5 justify-content-center">
-            <div className="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
-              <div className="d-flex bg-light p-3 rounded">
+        <div className="contact-detail position-relative p-3 p-md-4 p-lg-5">
+          <div className="row g-3 g-md-4 g-lg-5 mb-0 justify-content-center">
+            <div
+              className="col-12 col-lg-6 col-xl-4 wow fadeIn"
+              data-wow-delay=".3s"
+            >
+              <div className="d-flex align-items-start bg-light p-3 rounded h-100">
                 <div
-                  className="flex-shrink-0 btn-square rounded-circle"
+                  className="flex-shrink-0 btn-square rounded-circle d-flex align-items-center justify-content-center"
                   style={{
-                    width: "64px",
-                    height: "64px",
+                    width: "52px",
+                    height: "52px",
                     backgroundColor: "#000000",
                   }}
                 >
                   <i className="fas fa-map-marker-alt text-white"></i>
                 </div>
-                <div className="ms-3">
-                  <h4 className="text-black">Address</h4>
-                  <a
-                    // href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6"
-                    // target="_blank"
-                    className="h5"
-                  >
-                    Thasikhel,Lalitpur,Nepal
-                  </a>
+                <div className="ms-3 contact-info-text flex-grow-1">
+                  <h4 className="text-black mb-1">Address</h4>
+                  <span className="h5 d-block text-break mb-0">
+                    Thasikhel, Lalitpur, Nepal
+                  </span>
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
-              <div className="d-flex bg-light p-3 rounded">
+            <div
+              className="col-12 col-lg-6 col-xl-4 wow fadeIn"
+              data-wow-delay=".5s"
+            >
+              <div className="d-flex align-items-start bg-light p-3 rounded h-100">
                 <div
-                  className="flex-shrink-0 btn-square rounded-circle"
+                  className="flex-shrink-0 btn-square rounded-circle d-flex align-items-center justify-content-center"
                   style={{
-                    width: "64px",
-                    height: "64px",
+                    width: "52px",
+                    height: "52px",
                     backgroundColor: "#000000",
                   }}
                 >
                   <i className="fa fa-phone text-white"></i>
                 </div>
-                <div className="ms-3">
-                  <h4 className="text-black">Call Us</h4>
-                  <a className="h5">+977 9705384904</a>
+                <div className="ms-3 contact-info-text flex-grow-1">
+                  <h4 className="text-black mb-1">Call Us</h4>
+                  <a
+                    href="tel:+9779705384904"
+                    className="h5 d-block text-break mb-0 text-decoration-none"
+                  >
+                    +977 9705384904
+                  </a>
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
-              <div className="d-flex bg-light p-3 rounded">
+            <div
+              className="col-12 col-lg-6 col-xl-4 wow fadeIn"
+              data-wow-delay=".7s"
+            >
+              <div className="d-flex align-items-start bg-light p-3 rounded h-100">
                 <div
-                  className="flex-shrink-0 btn-square rounded-circle"
+                  className="flex-shrink-0 btn-square rounded-circle d-flex align-items-center justify-content-center"
                   style={{
-                    width: "64px",
-                    height: "64px",
+                    width: "52px",
+                    height: "52px",
                     backgroundColor: "#000000",
                   }}
                 >
                   <i className="fa fa-envelope text-white"></i>
                 </div>
-                <div className="ms-3">
-                  <h4 className="text-black">Email Us</h4>
-                  <a className="h5">paarisha@saiitek.com.np</a>
+                <div className="ms-3 contact-info-text flex-grow-1">
+                  <h4 className="text-black mb-1">Email Us</h4>
+                  <a
+                    href="mailto:paarisha@saiitek.com.np"
+                    className="h5 d-block text-break mb-0 text-decoration-none"
+                  >
+                    paarisha@saiitek.com.np
+                  </a>
                 </div>
               </div>
             </div>

@@ -664,6 +664,10 @@ h6,
 
 
 /*** Contact Start ***/
+.contact-detail .contact-info-text {
+    min-width: 0;
+}
+
 .contact-detail::before {
     position: absolute;
     content: "";

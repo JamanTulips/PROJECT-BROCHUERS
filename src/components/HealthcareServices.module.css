@@ -19,13 +19,13 @@
 }
 
 .header p {
-  max-width: none;
+  max-width: 640px;
   margin: 14px auto 0;
+  padding: 0 8px;
   color: #64748b;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.45;
-  white-space: nowrap;
 }
 
 .grid {
@@ -125,12 +125,19 @@
 
   .leftCard,
   .rightCard {
-    grid-template-rows: 220px 360px;
+    grid-template-rows: auto minmax(320px, auto);
   }
 
   .leftTop,
   .rightTop {
     padding: 42px 34px 28px;
+  }
+
+  .rightCard .cardImage {
+    transform: none;
+    object-fit: contain;
+    object-position: center;
+    background: #eef6fd;
   }
 }
 
@@ -154,12 +161,17 @@
 
   .leftCard,
   .rightCard {
-    grid-template-rows: 205px 285px;
+    grid-template-rows: auto minmax(260px, auto);
   }
 
   .leftTop,
   .rightTop {
     padding: 34px 24px 24px;
+  }
+
+  .leftCard .cardImage {
+    object-fit: contain;
+    background: #eef6fd;
   }
 
   .leftTop p,
